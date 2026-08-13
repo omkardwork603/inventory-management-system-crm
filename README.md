@@ -1,58 +1,263 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Inventory Management System CRM
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+A professional **Inventory Management System CRM** built with **Laravel, PHP, MySQL, Tailwind CSS, and JavaScript**.
 
-## About Laravel
+This system helps manage products, categories, suppliers, customers, purchases, sales, stock levels, and inventory reports from a centralized dashboard.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 🚀 Features
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+* 🔐 User Authentication
+* 📊 Professional Dashboard
+* 📦 Product Management
+* 📂 Category Management
+* 🏢 Supplier Management
+* 👥 Customer Management
+* 🛒 Purchase Management
+* 💰 Sales Management
+* 📉 Stock Management
+* ⚠️ Low Stock Alerts
+* 🧾 Sales Invoices
+* 📈 Sales & Purchase Charts
+* 📊 Category Distribution
+* 🔎 Search and Filtering
+* 📱 Responsive UI
+* 👤 User Profile Management
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 🛠️ Technologies
 
-## Learning Laravel
+* **Laravel**
+* **PHP**
+* **MySQL**
+* **Blade**
+* **Tailwind CSS**
+* **JavaScript**
+* **Chart.js**
+* **Composer**
+* **Node.js / npm**
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## 📁 Important
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+The following folders are **not included in this GitHub repository**:
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
-
-## Agentic Development
-
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
-
-```bash
-composer require laravel/boost --dev
-
-php artisan boost:install
+```text
+/vendor
+/node_modules
 ```
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+These folders are generated automatically and should not be uploaded to GitHub.
 
-## Contributing
+### Install PHP dependencies
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+After cloning the project, run:
 
-## Code of Conduct
+```bash
+composer install
+```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### Install Node dependencies
 
-## Security Vulnerabilities
+Run:
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+```bash
+npm install
+```
 
-## License
+This will recreate the `vendor` and `node_modules` dependencies required by the project.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## ⚙️ Installation
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/YOUR-USERNAME/inventory-management-system-crm.git
+```
+
+### 2. Open the project
+
+```bash
+cd inventory-management-system-crm
+```
+
+### 3. Install Laravel dependencies
+
+```bash
+composer install
+```
+
+### 4. Install frontend dependencies
+
+```bash
+npm install
+```
+
+### 5. Create environment file
+
+```bash
+cp .env.example .env
+```
+
+For Windows CMD:
+
+```cmd
+copy .env.example .env
+```
+
+### 6. Generate application key
+
+```bash
+php artisan key:generate
+```
+
+### 7. Configure database
+
+Open the `.env` file and configure your MySQL database:
+
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=inventory_management
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+### 8. Run migrations
+
+```bash
+php artisan migrate
+```
+
+If the project contains seeders:
+
+```bash
+php artisan db:seed
+```
+
+Or:
+
+```bash
+php artisan migrate --seed
+```
+
+### 9. Build frontend assets
+
+For development:
+
+```bash
+npm run dev
+```
+
+For production:
+
+```bash
+npm run build
+```
+
+### 10. Start Laravel
+
+```bash
+php artisan serve
+```
+
+Then open:
+
+```text
+http://127.0.0.1:8000
+```
+
+## 📊 Main Modules
+
+| Module     | Description                     |
+| ---------- | ------------------------------- |
+| Dashboard  | Inventory and business overview |
+| Products   | Manage products and stock       |
+| Categories | Manage product categories       |
+| Suppliers  | Manage suppliers                |
+| Customers  | Manage customers                |
+| Purchases  | Record and manage purchases     |
+| Sales      | Create and manage sales         |
+| Stock      | Track inventory movements       |
+| Reports    | View business performance       |
+| Profile    | Manage user profile             |
+
+## 📦 Dependency Folders
+
+Do **not** manually upload these folders:
+
+```text
+node_modules/
+vendor/
+```
+
+They are already included in `.gitignore`.
+
+After cloning the repository, recreate them with:
+
+```bash
+composer install
+npm install
+```
+
+## 🔒 Environment
+
+The `.env` file should also **not** be uploaded to GitHub because it may contain database credentials and other private configuration.
+
+Use:
+
+```text
+.env.example
+```
+
+as the template for creating your local `.env` file.
+
+## 🧑‍💻 Development
+
+Start the Laravel development server:
+
+```bash
+php artisan serve
+```
+
+Start Vite:
+
+```bash
+npm run dev
+```
+
+You can run both during development.
+
+## 📌 GitHub Repository Structure
+
+```text
+inventory-management-system-crm/
+│
+├── app/
+├── bootstrap/
+├── config/
+├── database/
+├── public/
+├── resources/
+├── routes/
+├── storage/
+├── tests/
+│
+├── .env.example
+├── .gitignore
+├── artisan
+├── composer.json
+├── composer.lock
+├── package.json
+├── package-lock.json
+└── README.md
+```
+
+The generated dependency directories are intentionally excluded:
+
+```text
+❌ node_modules/
+❌ vendor/
+```
+
+## 📄 License
+
+This project is developed for learning, portfolio, and project development purposes.
