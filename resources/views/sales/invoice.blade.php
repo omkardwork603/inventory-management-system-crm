@@ -126,7 +126,7 @@
             <td>
 
                 <div class="company-name">
-                    MINI INVENTORY MANAGEMENT
+                    MINI INVENTORY MANAGEMENT By omkar Deshmukh
                 </div>
 
                 <div>
