@@ -13,7 +13,7 @@ This system helps manage products, categories, suppliers, customers, purchases, 
 
 <br><br>
 
-#Dashboard
+# Dashboard
 
 <img width="1366" height="768" alt="Screenshot (203)" src="https://github.com/user-attachments/assets/788c4ba1-bc8e-4d57-8379-51320d4b8619" />
 
