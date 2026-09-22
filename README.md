@@ -4,6 +4,15 @@ A professional **Inventory Management System CRM** built with **Laravel, PHP, My
 
 This system helps manage products, categories, suppliers, customers, purchases, sales, stock levels, and inventory reports from a centralized dashboard.
 
+<br>
+
+<img width="1366" height="768" alt="Screenshot (202)" src="https://github.com/user-attachments/assets/de463bc5-81dd-48ed-8e40-860f4b1c3847" />
+
+<br>
+
+<img width="1366" height="768" alt="Screenshot (203)" src="https://github.com/user-attachments/assets/788c4ba1-bc8e-4d57-8379-51320d4b8619" />
+
+
 ## 🚀 Features
 
 * 🔐 User Authentication
